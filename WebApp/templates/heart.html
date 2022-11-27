@@ -1,0 +1,86 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block body%}
+<div id="wrapper">
+    <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+            <h2> Heart Disease</h2>
+          <p>This data set dates from 1988 and consists of four databases: Cleveland, Hungary, Switzerland, and Long Beach V. It contains 76 attributes, including the predicted attribute, but all published experiments refer to using a subset of 14 of them. The "target" field refers to the presence of heart disease in the patient. It is integer valued 0 = no disease and 1 = disease.
+    
+            </p>
+            <div >
+                <section>
+                    <form action="/app/hresult">
+                        <div class="fields">
+                            <div class="field half" name="id1" id="id1">
+                                <!-- <label for="name">Pregnancies</label>
+                                <input type="text" name="id1" id="name" /> -->
+                                <label for="fname">Age</label><br>
+                                <input type="text" id="hid1" name="hid1" ><br>
+                               
+                                <!-- <label for="fname">Glucose(Plasma glucose concentration a 2 hours in an oral glucose tolerance test)</label><br> -->
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Sex:(1:Male,0:Female)</label>
+            <input type="text" id="fname" name="hid2" ><br>
+                            </div>
+                            <div class="field half ">
+                                <label for="fname">ChestPainType</label><br>
+                                <input type="text" id="fname" name="hid3" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Trestbps</label><br>
+                                <input type="text" id="fname" name="hid4" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Serum Cholestoral in mg/dl:</label><br>
+            <input type="text" id="fname" name="hid5" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">FBS:</label><br>
+            <input type="text" id="fname" name="hid6" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">RestCeg</label><br>
+                                <input type="text" id="fname" name="hid7" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Thalach</label><br>
+                                <input type="text" id="fname" name="hid8" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Exang</label><br>
+            <input type="text" id="fname" name="hid9" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Oldpeak</label><br>
+            <input type="text" id="fname" name="hid10" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Slope</label><br>
+            <input type="text" id="fname" name="hid11" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">ca</label><br>
+            <input type="text" id="fname" name="hid12" ><br>
+                            </div>
+                            <div class="field half">
+                                <label for="fname">Thal</label><br>
+            <input type="text" id="fname" name="hid13" ><br>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <input type="submit" class="button submit"  value="Submit">
+                            
+                        </ul>
+                    </form>
+                </section>
+                    Result:{{hresult}}
+               
+            
+            
+            </div>
+        </div>
+    </section>
+    </div>
+{% endblock%}
